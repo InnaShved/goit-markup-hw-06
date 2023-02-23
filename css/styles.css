@@ -220,8 +220,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .footer-container{
     display: flex;
    
-    gap: 80px;
 }
+
 .footer-logo{
     color: var(--second-bg-color);
     line-height: 1.5;
@@ -236,7 +236,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 margin-top: 16px;
 }
 .footer-social-media{
-    padding-left: 40px;
+    margin-right: 80px;
+    margin-left: 120px;
 }
 .footer-social-media .title{
     font-size: 16px;
@@ -249,6 +250,7 @@ margin-top: 16px;
     display: flex;
     justify-content: center;
     gap:16px;
+    
         
 }
 .social-media-link{
@@ -279,20 +281,17 @@ margin-top: 16px;
     fill: currentColor;
  }
  /* footer-form */
- .footer-form{
 
- }
- .email-label{
-    display: block;
+ .footer-form-title{
+    font-size: 16px;
     margin-bottom: 16px;
-
     line-height: 1.5;
     color: var(--primary-bg-color)
  }
  .subscribe-field{
-    display:flex;
-    align-items: center;
-    gap: 24px;
+    display: flex;
+        align-items: center;
+        gap: 24px;
  }
  .mail-input{
     width: 264px;
@@ -302,23 +301,19 @@ margin-top: 16px;
     font-size: 12px;
     line-height: 2;
     background-color: transparent;
+    color: var(--third-text-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
  }
 
  .subscribe-button{
-    min-width: 165px;
     padding: 8px 24px;
-    
-  
- }
- .subscribe-button-content{
-    width: 100%;
-    display:flex;
+    display: flex;
     gap: 16px;
     justify-content: center;
     align-items: center;
- }
+}
+
  .subscribe-icon{
     width: 24px;
     height: 24px;
@@ -671,9 +666,7 @@ img.work-example {
     transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-     padding-top: 72px;
-     padding-left: 24px;
-     padding-right: 24px;
+     padding: 72px 24px 24px 24px;
     
 }
 
@@ -720,14 +713,14 @@ img.work-example {
     text-align: center;
     line-height: 1.5;
 }
-.form-list{
+/* .form-list{
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 8px;
     margin-bottom: 16px;
-}
+} */
 
 .modal-label{
     max-width: 360px;
@@ -738,6 +731,8 @@ img.work-example {
     font-size: 12px;
     line-height: 1.16;
     position: relative;
+    margin-bottom: 8px;
+    height: 58px;
 
 
 }
@@ -781,8 +776,13 @@ img.work-example {
     fill: var(--accent-color);
 
 }
+.textarea-label{
+    height: 138px;
+}
 .textarea{
     resize: none;
+    padding-left: 16px;
+    height: 120px;
 }
 .textarea:placeholder {
     color: rgb(117, 117, 117, 0.5)
@@ -790,6 +790,7 @@ img.work-example {
 .modal-checkbox{
     display: block;
     margin-bottom: 24px;
+    margin-top: 16px;
     font-size: 12px;
     position: relative;
     padding-left: 24px;
