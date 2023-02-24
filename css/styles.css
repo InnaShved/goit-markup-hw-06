@@ -637,6 +637,10 @@ img.work-example {
     top:0;
     left:0;
     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
     width: 100%;
     height: 100%;
 
@@ -651,12 +655,16 @@ img.work-example {
     visibility: hidden;
 }
 .modal{
-    position: absolute;
-    min-width: 408px;
-    min-height: 576px;
-    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 408px;
+    max-height: 576px;
+
+    position: relative;
+    /* left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+
     background-color: var(--primary-bg-color);
     opacity: 1;
     transition-property: opacity,
